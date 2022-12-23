@@ -10,14 +10,19 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:equivalence-checker.helloWorld"
+        "onCommand:equivalence-checker.equivalence",
+        "onCommand:equivalence-checker.visualize"
 	],
 	"browser": "./dist/web/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "equivalence-checker.helloWorld",
-				"title": "Hello World"
+				"command": "equivalence-checker.visualize",
+				"title": "Visualize Proof"
+			},
+			{
+				"command": "equivalence-checker.equivalence",
+				"title": "Check equivalence"
 			}
 		]
 	},
